@@ -1,0 +1,25 @@
+{
+  "name": "postgresql_tp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathisLeRoyNivot/PostgreSQL_TP.git"
+  },
+  "author": "Mathis LE ROY-NIVOT Valentin GUIBERT Evan RETIERE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathisLeRoyNivot/PostgreSQL_TP/issues"
+  },
+  "homepage": "https://github.com/MathisLeRoyNivot/PostgreSQL_TP#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7",
+    "pg": "^7.9.0",
+    "yargs": "^13.2.2"
+  }
+}
