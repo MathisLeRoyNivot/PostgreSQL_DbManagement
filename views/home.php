@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -21,12 +24,17 @@
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-link">Link</button>
-    <button type="button" class="btn btn-info">Info</button>
+    <div class="jumbotron">
+        <h1 class="display-3">Home page</h1>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="./create-schema.php" role="button">Create schemas</a>
+          <a class="btn btn-primary btn-lg" href="./create-table.php" role="button">Create table</a>
+          <a class="btn btn-primary btn-lg" href="./create-user.php" role="button">Create user</a>
+          <a class="btn btn-primary btn-lg" href="./manage.php" role="button">Manage right</a>
+        </p>
+        
+      </div>
     <script src="./js/main.js"></script>
 </body>
 

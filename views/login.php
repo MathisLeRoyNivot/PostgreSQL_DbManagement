@@ -1,7 +1,10 @@
 <?php
 
 ?>
+<<<<<<< HEAD:views/login.php
 
+=======
+>>>>>>> 53935cc83086f686438b9598c2bd9ca495d70dcf:views/login.php
 <!DOCTYPE html>
 <html>
 
@@ -21,7 +24,7 @@
         crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
         <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
-        
+
 </head>
 
 <body>
