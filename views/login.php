@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -17,13 +20,13 @@
         crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
         <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
-        
+
 </head>
 
 <body>
 
     <div class="login-form">
-        <form class="form">
+        <form class="form" action="">
             <h2 class="text-center">Log in</h2>       
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Username" required="required">

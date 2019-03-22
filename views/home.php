@@ -1,10 +1,13 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>POSTGRESQL | Manage</title>
+    <title>POSTGRESQL | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -21,7 +24,17 @@
 </head>
 
 <body>
-
+    <div class="jumbotron">
+        <h1 class="display-3">Home page</h1>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="./create-schema.php" role="button">Create schemas</a>
+          <a class="btn btn-primary btn-lg" href="./create-table.php" role="button">Create table</a>
+          <a class="btn btn-primary btn-lg" href="./create-user.php" role="button">Create user</a>
+          <a class="btn btn-primary btn-lg" href="./manage.php" role="button">Manage right</a>
+        </p>
+        
+      </div>
     <script src="./js/main.js"></script>
 </body>
 

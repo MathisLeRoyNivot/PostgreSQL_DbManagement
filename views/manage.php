@@ -1,10 +1,13 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>POSTGRESQL | Home</title>
+    <title>POSTGRESQL | Manage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -21,12 +24,7 @@
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-link">Link</button>
-    <button type="button" class="btn btn-info">Info</button>
+
     <script src="./js/main.js"></script>
 </body>
 
