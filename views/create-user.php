@@ -11,32 +11,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
-
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="./home.php">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./select.php">Select</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./insert.php">Insert</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./create.php">Create</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./manage.php">Manage</a>
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>
+            </form>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="col-md-10 centered">
 
-            <form>
+            <form action="../includes/queries/create-user.query.php" method="post">
                 <fieldset class="field1">
-                    <div class="row">
-                        <a href="javascript:history.back()" class="btn btn-primary btn-lg col-3">Go Back</a>
-                        <div class="col-9 align-self-center">
-                            <h2>Create User</h2>
+                <div class="row">
+                    <a href="javascript:history.back()" class="btn btn-primary btn-lg col-3">Go Back</a>
+                    <div class="col-9 align-self-center">
+                        <h2>Create User</h2>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <h3>Request user</h3>
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Create user statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">Execute request</button>
                         </div>
                     </div>
-                    <hr class="my-4">
-                    <h3></h3>
-                    <div class="row">
+                </div>
 
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        HELP
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        CREATE USER name [ [ WITH ] option [ ... ] ]<br>
+                        <hr>
+                        Where option can be:<br>
+
+                            SUPERUSER | NOSUPERUSER<br>
+                            | CREATEDB | NOCREATEDB<br>
+                            | CREATEROLE | NOCREATEROLE<br>
+                            | CREATEUSER | NOCREATEUSER<br>
+                            | INHERIT | NOINHERIT<br>
+                            | LOGIN | NOLOGIN<br>
+                            | REPLICATION | NOREPLICATION<br>
+                            | CONNECTION LIMIT connlimit<br>
+                            | [ ENCRYPTED | UNENCRYPTED ] PASSWORD 'password'<br>
+                            | VALID UNTIL 'timestamp'<br>
+                            | IN ROLE role_name [, ...]<br>
+                            | IN GROUP role_name [, ...]<br>
+                            | ROLE role_name [, ...]<br>
+                            | ADMIN role_name [, ...]<br>
+                            | USER role_name [, ...]<br>
+                            | SYSID uid
                     </div>
+                </div>
             </form>
-
         </div>
     </div>
     
-
-
     <!-- Scripts Call -->
     <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

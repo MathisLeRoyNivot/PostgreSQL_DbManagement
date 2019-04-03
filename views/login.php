@@ -16,20 +16,23 @@
 
 <body>
 
-    <div class="login-form">
-        <form class="form" action="../includes/login.inc.php" method="post">
-            <h2 class="text-center">Log in</h2>       
-            <div class="form-group">
-                <input type="text" name="username" class="form-control" placeholder="Username" required="required">
-            </div>
-            <div class="form-group">
-                <input type="password" name="password" class="form-control" placeholder="Password" required="required">
-            </div>
-            <div class="form-group">
-                <button type="submit" name="submit" class="btn btn-primary btn-block">Log in</button>
-            </div>  
-        </form>
+    <div class="login">
+        <div class="login-form">
+            <form class="form" action="../includes/login.inc.php" method="post">
+                <h2 class="text-center">Log in</h2>       
+                <div class="form-group">
+                    <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>  
+            </form>
+        </div>
     </div>
+    
     
     <!-- Scripts Call -->
     <script src="./js/main.js"></script>
