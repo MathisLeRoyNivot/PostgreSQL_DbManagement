@@ -18,7 +18,7 @@
 
     <div class="login">
         <div class="login-form">
-            <form class="form" action="../includes/login.inc.php" method="post">
+            <form class="form" action="./home.php" method="post">
                 <h2 class="text-center">Log in</h2>       
                 <div class="form-group">
                     <input type="text" name="username" class="form-control" placeholder="Username" required="required">
