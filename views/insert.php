@@ -22,18 +22,21 @@
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="./select.php">Select</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="./insert.php">Insert</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./create.php">Create</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./manage.php">Manage</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./select.php">Select</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./insert.php">Insert</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./create.php">Create</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./manage.php">Manage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./load.php">Load</a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>

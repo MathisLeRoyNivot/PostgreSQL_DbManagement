@@ -1,8 +1,3 @@
-<?php
-
-require '../includes/queries/select-tables.query.php';
-
-?>
 
 <!DOCTYPE html>
 <html>
@@ -25,23 +20,46 @@ require '../includes/queries/select-tables.query.php';
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="./select.php">Select</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./insert.php">Insert</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./create.php">Create</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Manage</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./select.php">Select</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./insert.php">Insert</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./create.php">Create</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Manage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./load.php">Load</a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>
         </div>
     </nav>
+
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Table</th>
+                    <th scope="col">Schema</th>
+                    <th scope="col">Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php include 'C:\wamp64\www\PostgreSQL_TP\includes\queries\select-tables.query.php';?>
+            </tbody>
+        </table>
+
+        <!-- <div class="alert alert-dismissible alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Request successfully completed</a>.
+        </div> -->
+    </div>
 </body>
 </html>

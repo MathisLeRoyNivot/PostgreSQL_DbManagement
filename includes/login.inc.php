@@ -2,7 +2,11 @@
 
 session_start();
 
-require './../db/db-config.php';
+// require_once '../db/db-config.php';
+
+$dbServer = "localhost";
+$dbPort = 5432;
+$dbName = "bdd-tp";
 
 if (isset($_POST['submit'])) {
     try {
