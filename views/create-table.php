@@ -1,5 +1,5 @@
 <?php
-
+require_once '../includes/login.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>POSTGRESQL | Create Table</title>
+    <?php require './components/favicons.com.php'?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
@@ -43,12 +44,13 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="col-md-10 centered">
 
             <form action="../includes/queries/create-table.query.php" method="post">
                 <fieldset class="field1">
                     <div class="row">
+                        <a href="javascript:history.back()" class="btn btn-primary btn-lg col-3">Go Back</a>
                         <div class="col-9 align-self-center">
                             <h2>Create Table</h2>
                         </div>

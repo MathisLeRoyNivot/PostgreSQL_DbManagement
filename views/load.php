@@ -1,5 +1,5 @@
 <?php
-
+require_once '../includes/login.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>POSTGRESQL | Load</title>
+    <?php require './components/favicons.com.php'?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
@@ -43,6 +44,20 @@
             </form>
         </div>
     </nav>
+
+    <div class="container">
+        <form class="form-group" action="" method="post">
+            <div class="input-group mt-5 mb-5">
+                <div class="custom-file">
+                    <input type="file" class="form-control-file custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                </div>
+            </div>
+            <input type="file" class="form-control-file btn btn-outline-success" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+            <button type="submit">Load file</button>
+        </form>
+    </div>
     
     <script src="main.js"></script>
 </body>

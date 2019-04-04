@@ -1,5 +1,5 @@
 <?php
-    require_once '../includes/login.inc.php';
+require_once '../includes/login.inc.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>POSTGRESQL | Home</title>
+    <?php require './components/favicons.com.php'?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
@@ -44,15 +45,10 @@
             </form>
         </div>
     </nav>
-    <div class="container">
+    <div class="container mt-5">
         <div class="jumbotron">
-            <h1 class="display-3">Home page</h1>
+            <h3 class="text-center">Welcome to the database administration plateform</h3>
             <hr class="my-4">
-
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="./" role="button">SELECT</a>
-                <a class="btn btn-primary btn-lg" href="./" role="button">INSERT</a>
-            </p>
         </div>
     </div>
 

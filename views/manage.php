@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -9,6 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>POSTGRESQL | Manage</title>
+    <?php require './components/favicons.com.php'?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
@@ -45,21 +42,21 @@
             </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="col-md-10 centered">
+    <div class="mt-5">
+        <div class="col-md-5 centered">
 
             <form>
                 <fieldset class="field1">
                 <div class="row">
                     <div class="col-9 align-self-center">
-                        <h2>Manage Right</h2>
+                        <h1>Manage Right</h1>
                     </div>
                 </div>
                 <hr class="my-4">
                 <h3></h3>
-                <div class="row">
-
-                </div>
+                <table class="table table-hover">
+                    <?php include 'C:\wamp64\www\PostgreSQL_TP\includes\queries\roles.query.php';?>
+                </table>
             </form>
 
         </div>
