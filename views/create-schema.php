@@ -40,6 +40,7 @@ require_once '../includes/login.inc.php';
                     <a class="nav-link" href="./load.php">Load</a>
                 </li>
             </ul>
+            <p class="my-2 mr-4">Connected with : <?php echo $_SESSION['username'] ?></p>
             <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>

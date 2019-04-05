@@ -39,11 +39,48 @@ require_once '../includes/login.inc.php';
                     <a class="nav-link" href="./load.php">Load</a>
                 </li>
             </ul>
+            <p class="my-2 mr-4">Connected with : <?php echo $_SESSION['username'] ?></p>
             <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>
         </div>
     </nav>
+
+    <div class="container mt-5">
+        <div class="col-md-10 centered">
+
+            <form action="../includes/queries/create-schema.query.php" method="post">
+                <fieldset class="field1">
+                <div class="row">
+                    <div class="col-9 align-self-center">
+                        <h2>Insert</h2>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <h3>Request schema</h3>
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Query insert statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">Execute request</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        HELP
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        INSERT INTO table [ ( column [, ...] ) ]<br>
+                        { DEFAULT VALUES | VALUES ( { expression | DEFAULT } [, ...] ) | query }
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     
     <script src="main.js"></script>
 </body>

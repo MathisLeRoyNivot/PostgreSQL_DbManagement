@@ -39,22 +39,16 @@ require_once '../includes/login.inc.php';
                     <a class="nav-link" href="./load.php">Load</a>
                 </li>
             </ul>
+            <p class="my-2 mr-4">Connected with : <?php echo $_SESSION['username'] ?></p>
             <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
         <form class="form-group" action="" method="post">
-            <div class="input-group mt-5 mb-5">
-                <div class="custom-file">
-                    <input type="file" class="form-control-file custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
-                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-                </div>
-            </div>
-            <input type="file" class="form-control-file btn btn-outline-success" id="exampleInputFile" aria-describedby="fileHelp">
-            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
             <button type="submit">Load file</button>
         </form>
     </div>

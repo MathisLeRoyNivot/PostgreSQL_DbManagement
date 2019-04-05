@@ -40,6 +40,8 @@ require_once '../includes/login.inc.php';
                     <a class="nav-link" href="./load.php">Load</a>
                 </li>
             </ul>
+            
+            <p class="my-2 mr-4">Connected with : <?php echo $_SESSION['username'] ?></p>
             <form class="form-inline my-2 my-lg-0" action="../includes/logout.inc.php">
                 <button class="btn btn-danger my-2 my-sm-0" type="submit">Log out</button>
             </form>
@@ -48,7 +50,7 @@ require_once '../includes/login.inc.php';
     <div class="container mt-5">
         <div class="jumbotron">
             <h3 class="text-center">Welcome to the database administration plateform</h3>
-            <hr class="my-4">
+            <hr class="my-5">
         </div>
     </div>
 
