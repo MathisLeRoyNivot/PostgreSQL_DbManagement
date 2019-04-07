@@ -1,6 +1,5 @@
 <?php
 
-require 'C:\wamp64\www\PostgreSQL_TP\includes\login.inc.php';
 require 'C:\wamp64\www\PostgreSQL_TP\includes\queries\select-schemas.query.php';
 
 

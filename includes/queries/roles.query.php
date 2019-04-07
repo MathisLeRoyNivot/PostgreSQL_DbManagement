@@ -1,7 +1,5 @@
 <?php
 
-require 'C:\wamp64\www\PostgreSQL_TP\includes\login.inc.php';
-
 $columnName = "SELECT column_name FROM information_schema.columns WHERE table_name = 'pg_roles'";
 $columnNameQuery = $conn->query($columnName);
 $userList = "SELECT * FROM pg_roles;";
