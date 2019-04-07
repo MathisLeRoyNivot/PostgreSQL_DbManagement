@@ -47,9 +47,11 @@ require_once '../includes/login.inc.php';
     </nav>
 
     <div class="container mt-5">
+        <h1>Load - <small class="text-muted">Loading flat file</small></h1>
+        <hr>
         <form class="form-group" action="" method="post">
             <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-            <button type="submit">Load file</button>
+            <button type='submit' class='btn btn-outline-success mt-3'>Load file</button>
         </form>
     </div>
     

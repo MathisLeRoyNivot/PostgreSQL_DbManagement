@@ -53,7 +53,10 @@
                     </div>
                 </div>
                 <hr class="my-4">
-                <h3></h3>
+                <h3 class="mt-3 mb-4">
+                    List - 
+                    <small class="text-muted">All users & their rights</small>
+                </h3>
                 <table class="table table-hover">
                     <?php include 'C:\wamp64\www\PostgreSQL_TP\includes\queries\roles.query.php';?>
                 </table>

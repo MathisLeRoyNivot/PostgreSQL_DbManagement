@@ -48,19 +48,19 @@ require_once '../includes/login.inc.php';
 
     <div class="container mt-5">
         <div class="col-md-10 centered">
+            <div class="row">
+                <div class="col-9 align-self-center">
+                    <h1>Insert</h1>
+                </div>
+            </div>
+            <hr class="my-4">
+            <h3>Request insert</h3>
 
-            <form action="../includes/queries/create-schema.query.php" method="post">
+            <form action="../includes/queries/insert.query.php" method="post">
                 <fieldset class="field1">
                 <div class="row">
-                    <div class="col-9 align-self-center">
-                        <h2>Insert</h2>
-                    </div>
-                </div>
-                <hr class="my-4">
-                <h3>Request schema</h3>
-                <div class="row">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Query insert statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        <input type="text" class="form-control" name="insert-input" placeholder="Query insert statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="submit">Execute request</button>
                         </div>

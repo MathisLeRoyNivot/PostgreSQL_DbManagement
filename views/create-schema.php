@@ -61,7 +61,7 @@ require_once '../includes/login.inc.php';
                 <h3>Request schema</h3>
                 <div class="row">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Query schema statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        <input type="text" class="form-control" name="schema-input" placeholder="Query schema statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="submit">Execute request</button>
                         </div>

@@ -1,5 +1,14 @@
 <?php
 require_once '../includes/login.inc.php';
+
+$userSession = $_SESSION['username'];
+
+$userInfo = "SELECT rolsuper FROM pg_roles WHERE rolname = '$userSession';";
+$query = $conn->prepare($userInfo);
+$query->execute();
+$result = $query->fetch();
+echo $result[0];
+
 ?>
 
 <!DOCTYPE html>

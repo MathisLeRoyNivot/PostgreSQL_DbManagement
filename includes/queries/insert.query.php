@@ -3,6 +3,7 @@
 require '../login.inc.php';
 
 if (isset($_POST['submit'])) {
-    $tableQuery = $_POST['table-input'];
+    $tableQuery = $_POST['insert-input'];
 
+    
 }
