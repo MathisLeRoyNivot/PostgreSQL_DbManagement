@@ -7,7 +7,7 @@ This project aims to a web platform
 ## Initialization 
 
 ### 1. Download or clone the project
-Pour se faire, télécharger le zip du projet ou cloner le projet en tapant cette commande dans votre CLI :
+Download the zip of the project or clone the repository by taping the following command in your CLI :
 ```bash
 git clone https://github.com/MathisLeRoyNivot/PostgreSQL_TP
 ```
