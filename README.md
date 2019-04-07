@@ -1,13 +1,23 @@
-# PostgreSQL_TP
+# PostgreSQL - Web Application
 
-formulaire de connexion : 2 champ saisie,1 input
+> Project realized by [Mathis Le Roy Nivot](https://github.com/MathisLeRoyNivot), [Valentin Guibert](https://github.com/valentingbt) & [Evan Retière](https://github.com/EpicZazaMan)
 
-formulaire de création de table : 1 champ de saisie Nom de table + X champ de saisie Nom colone
+This project aims to a web platform 
 
-formulaire de création de schémas : 1 champ de saisie pour name
+## Initialization 
 
-chargement des données par fichier plat : saisie fichier sur ordi type txt ou csv
+### 1. Download or clone the project
+Download the zip of the project or clone the repository by taping the following command in your CLI :
+```bash
+git clone https://github.com/MathisLeRoyNivot/PostgreSQL_TP
+```
+### 2. Import DB 
+After cloning or downloding the project, you will find in the Database folder, the dump of the database. You will need to restore the database in pgAdmin (III or 4) by using the graphical interface (available on pgadmin ) or by taping the following command :
 
-système d'attribution des roles et les gérer : champ nom de table, champ nom utilisateur
-
-formulaire de création d'utilisateur : 1 champ nom, 1 champ droit d'acces
+```bash
+psql -U <username> -d <dbname> -1 -f <filename>.sql
+```
+or
+```bash
+pg_restore -U <username> -d <dbname> -1 <filename>.dump
+```
