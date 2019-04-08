@@ -31,7 +31,7 @@
                         <textarea class="form-control" name="insert-input" placeholder="Query insert statement" id="exampleTextarea" rows="3" style="min-height:45px;"></textarea>
                         <!-- <input type="text" class="form-control" name="insert-input" placeholder="Query insert statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required> -->
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="submit">Execute request</button>
+                            <button class="btn btn-outline-secondary" name="insert-submit" type="submit">Execute request</button>
                         </div>
                     </div>
                 </div>
@@ -51,6 +51,9 @@
         </div>
     </div>
     
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
