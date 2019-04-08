@@ -6,4 +6,10 @@
           transform: translate(-50%, -50%);
   width: 350px;
 }
+
+.home-github-logo {
+  height: auto;
+  margin-left: 10px;
+  width: 35px;
+}
 /*# sourceMappingURL=main.css.map */
