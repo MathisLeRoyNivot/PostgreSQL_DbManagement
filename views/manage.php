@@ -16,7 +16,7 @@
 
     <?php require_once './components/navbar.com.php'; ?>
 
-    <div class="mt-5">
+    <div class="container mt-5">
         <div class="col-md-5 centered">
 
             <form>

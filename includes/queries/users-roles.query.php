@@ -35,3 +35,12 @@ $queryUserCreateD = $conn->prepare($userCreateRole);
 $queryUserCreateD->execute();
 $resultCreateD = $queryUserCreateD->fetch();
 $userCanCreateD = $resultCreateD[0];
+
+
+$userInsert = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'insert' & grantee = '$userSession';";
+$userSelect = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'select' & grantee = '$userSession';";
+$userUpdate = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'update' & grantee = '$userSession';";
+$userDelete = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'delete' & grantee = '$userSession';";
+$userTruncate = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'truncate' & grantee = '$userSession';";
+$userReference = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'reference' & grantee = '$userSession';";
+$userTrigger = "SELECT is_grantable FROM information_schema.role_table_grants WHERE privilege_type = 'trigger' & grantee = '$userSession';";
