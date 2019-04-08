@@ -31,9 +31,7 @@
                     List - 
                     <small class="text-muted">All users & their rights</small>
                 </h3>
-                <table class="table table-hover">
-                    <?php include 'C:\wamp64\www\PostgreSQL_TP\includes\queries\roles.query.php';?>
-                </table>
+                <?php include 'C:\wamp64\www\PostgreSQL_TP\includes\queries\roles.query.php';?>
             </form>
 
         </div>

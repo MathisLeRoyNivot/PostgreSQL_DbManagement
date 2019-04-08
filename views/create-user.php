@@ -32,7 +32,8 @@ require_once '../includes/login.inc.php';
                 <h3>Request user</h3>
                 <div class="row">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Create user statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                        <textarea class="form-control" placeholder="Query insert statement" id="exampleTextarea" rows="3" style="min-height:45px;"></textarea>
+                        <!-- <input type="text" class="form-control" placeholder="Create user statement" aria-label="Recipient's username" aria-describedby="basic-addon2" required> -->
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary" type="submit">Execute request</button>
                         </div>

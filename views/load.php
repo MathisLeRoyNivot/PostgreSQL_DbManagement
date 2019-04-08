@@ -22,6 +22,7 @@ require_once '../includes/login.inc.php';
         <h1>Load - <small class="text-muted">Loading flat file</small></h1>
         <hr>
         <form class="form-group" action="" method="post">
+            <label for="exampleInputFile">Import file</label>
             <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
             <button type='submit' class='btn btn-outline-success mt-3'>Load file</button>
         </form>
