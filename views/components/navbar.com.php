@@ -10,7 +10,7 @@
     <?php 
     require 'C:\wamp64\www\PostgreSQL_TP\includes\queries\users-roles.query.php';
 
-    if ($userIsSuper == 1 || $userIsByPass == 1) {
+    if ($userCanInsert === "YES" && $userCanSelect === "YES" && $userCanUpdate === "YES" && $userCanDelete === "YES"  && $userCanTruncate == "YES" && $userCanTrigger === "YES") {
         echo "<li class='nav-item'>
                 <a class='nav-link' href='./select.php'>Select</a>
             </li>
@@ -26,22 +26,20 @@
             <li class='nav-item'>
                 <a class='nav-link' href='./load.php'>Load</a>
             </li>";
-    } elseif ($userCanCreateR == 1 || $userCanCreateD == 1) {
+    } elseif ($userCanInsert === "YES" && $userCanSelect === "YES" && $userCanUpdate === "NO" && $userCanDelete === "NO"  && $userCanTruncate === "NO" && $userCanTrigger === "NO") {
         echo "<li class='nav-item'>
                 <a class='nav-link' href='./select.php'>Select</a>
             </li>
             <li class='nav-item'>
                 <a class='nav-link' href='./insert.php'>Insert</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='./create.php'>Create</a>
             </li>";
-    } else {
+    } elseif ($userCanInsert === "NO" && $userCanSelect === "YES" && $userCanUpdate === "NO" && $userCanDelete === "NO"  && $userCanTruncate === "NO" && $userCanTrigger === "NO") {
         echo "<li class='nav-item'>
                 <a class='nav-link' href='./select.php'>Select</a>
             </li>";
+    } else {
+        echo "<p class='my-2 mr-4'>no assigned rights</p>";
     }
-    
     ?>
 
         </ul>

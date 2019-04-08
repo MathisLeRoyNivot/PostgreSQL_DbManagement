@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once '../db/db-config.php';
+require_once 'C:\wamp64\www\PostgreSQL_TP\db\db-config.php';
 
 // $dbServer = "localhost";
 // $dbPort = 5432;
