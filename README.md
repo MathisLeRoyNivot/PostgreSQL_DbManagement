@@ -1,6 +1,6 @@
 # PostgreSQL - Web Application
 
-> Project realized by [Mathis Le Roy Nivot](https://github.com/MathisLeRoyNivot), [Valentin Guibert](https://github.com/valentingbt) & [Evan Retière](https://github.com/EpicZazaMan)
+> Project realized by [Mathis Le Roy Nivot](https://github.com/MathisLeRoyNivot)
 
 This project aims to a web platform 
 
