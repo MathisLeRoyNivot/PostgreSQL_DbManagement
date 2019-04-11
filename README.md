@@ -21,3 +21,13 @@ or
 ```bash
 pg_restore -U <username> -d <dbname> -1 <filename>.dump
 ```
+
+## Test phase
+
+### 1. Web development platform
+For testing the project you will need a Web development platform. If still don't have one, here's the following web development platform depending on your operating system : 
+
+| Windows | Linux | MacOS |
+|---|---|---|
+[Wamp Server](http://www.wampserver.com)  | [LAMP](https://doc.ubuntu-fr.org/lamp) | [MAMP](https://www.mamp.info/en/) |
+[XAMPP](https://www.apachefriends.org/fr/download.html)|
