@@ -20,6 +20,8 @@
             <h3 class="text-center">Welcome to the database administration plateform</h3>
             <hr class="my-5">
             <p class="text-center">This project is available to Github at the following <a href="https://github.com/MathisLeRoyNivot/PostgreSQL_TP" target="_blank">link</a><img class="home-github-logo" src="./img/github.svg" alt="Github Logo"></p>
+            <p class="text-center">This platform was realized (only) by <a href="https://github.com/MathisLeRoyNivot/" target="_blank"><strong>Mathis Le Roy-Nivot</strong></a></p>
+
         </div>
     </div>
 
