@@ -21,7 +21,7 @@
             List - <small class="text-muted">All available tables with associated schema</small>
         </h3>
 
-        <table class="table table-hover">
+        <table id="schemas-table" class="table table-hover">
             <thead>
                 <tr>
                     <th scope="col">Table</th>
@@ -35,7 +35,6 @@
             </tbody>
         </table>
 
-        <p id="demo1"></p>
         <p id="demo"></p>
         
     <script src="js/main.js"></script>
