@@ -15,19 +15,21 @@
     <?php require_once './components/navbar.com.php'; ?>
 
     <div class="container mt-5">
-        <h1>Select</h1>
-        <hr>
-        <h3 class="mt-3 mb-4">
-            List - <small class="text-muted">All available tables with associated schema</small>
-        </h3>
+        <div class="row">
+            <a href="javascript:history.back()" class="btn btn-primary btn-lg col-3">Go Back</a>
+            <div class="col-9 align-self-center">
+            <h2>SELECT</h2>
+        </div>
+    </div>
+    <hr>
+    <h3 class="mt-3 mb-4">
+        List - <small class="text-muted">Table : <?php echo $_GET["table"] ?> & Schema : <?php echo $_GET["schema"] ?></small>
+    </h3>
 
-        <table id="schemas-table" class="table table-hover">
-            <thead>
-                <tr>
+    <table id="schemas-table" class="table table-hover">
+        <thead>
+            <tr>
                 <?php require_once '../includes/queries/select-table.query.php'; ?>
 
-
-
-    
 </body>
 </html>
