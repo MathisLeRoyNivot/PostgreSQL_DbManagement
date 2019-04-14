@@ -12,7 +12,7 @@ Download the zip of the project or clone the repository by taping the following 
 git clone https://github.com/MathisLeRoyNivot/PostgreSQL_TP
 ```
 ### 2. Import DB 
-After cloning or downloding the project, you will find in the Database folder, the dump of the database. You will need to restore the database in pgAdmin (III or 4) by using the graphical interface (available on pgadmin ) or by taping the following command :
+After cloning or downloding the project, you will find in the Database folder (file named : Base.backup), the dump of the database. You will need to restore the database in pgAdmin (III or 4) by using the graphical interface (available on pgadmin ) or by taping the following command :
 
 ```bash
 psql -U <username> -d <dbname> -1 -f <filename>.sql
@@ -32,4 +32,4 @@ For testing the project you will need a Web development platform. If still don't
 [Wamp Server](http://www.wampserver.com)  | [LAMP](https://doc.ubuntu-fr.org/lamp) | [MAMP](https://www.mamp.info/en/) |
 [XAMPP](https://www.apachefriends.org/fr/download.html)|
 
-> Not finish yet
+And place the project into the 'www/' folder if your are in wamp for example.
