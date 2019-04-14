@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>POSTGRESQL | Home</title>
-    <?php require './components/favicons.com.php'?>
+    <?php require 'C:/wamp64/www/PostgreSQL_TP/views/components/favicons.com.php'?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/bootstrap.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css">
@@ -13,7 +13,7 @@
 
 <body>
 
-    <?php require_once './components/navbar.com.php'; ?>
+    <?php require_once 'C:/wamp64/www/PostgreSQL_TP/views/components/navbar.com.php'; ?>
 
     <div class="container mt-5">
         <div class="jumbotron">
