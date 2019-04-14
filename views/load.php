@@ -17,14 +17,16 @@ require_once '../includes/login.inc.php';
 <body>
     
     <?php require_once './components/navbar.com.php'; ?>
-    
+    <?php include 'C:\wamp64\www\PostgreSQL_TP\includes\queries\load-query.php';?>
+
     <div class="container mt-5">
         <h1>Load - <small class="text-muted">Loading flat file</small></h1>
         <hr>
-        <form class="form-group" action="" method="post">
+        <form enctype="multipart/form-data" class="form-group" action="#" method="post" >
             <label for="exampleInputFile">Import file</label>
-            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-            <button type='submit' class='btn btn-outline-success mt-3'>Load file</button>
+            <input type="file" class="form-control-file" name="fileupload" aria-describedby="fileHelp">
+            <button type='submit' class='btn btn-outline-success mt-3' name="submit" >Load file</button>
+            
         </form>
     </div>
     
