@@ -1,12 +1,12 @@
 <?php
 
-if(isset($_POST['submit'])){
+if(isset($_POST['save'])){
     $name = $_FILES['fileupload']['name'];//Name of the File
     $temp = $_FILES['fileupload']['tmp_name'];
     if(isset($name)){
         if(!empty($name)){      
             $location = 'C:\wamp64\www\PostgreSQL_TP\DATABASE';      
-            if(move_uploaded_file($temp_name, $location.$name)){
+            if(move_uploaded_file($temp, $location.$name)){
                 echo 'File uploaded successfully';
             }
         }       
