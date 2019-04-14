@@ -9,4 +9,6 @@ function  getId(element) {
     alert("Button position :\nRow : " + rowID + 
     "\nColmun : " + columnID +"\nTable selected : " + tableSelected);
 
+    window.location.href = "../../../PostgreSQL_TP/includes/queries/select-table.query.php?table=" + tableSelected; 
+
 }
