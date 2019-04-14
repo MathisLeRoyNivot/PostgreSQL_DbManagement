@@ -7,7 +7,8 @@ $tableColumn = "SELECT column_name FROM information_schema.columns WHERE table_n
 $columnQuery = $conn->query($tableColumn);
 
 $queryTable = "SELECT * FROM $tableSelected";
-$queryTableExec = $conn->query($queryTable);
+$queryTableExec = $conn->prepare($queryTable);
+$queryTableExec->execute();
 
 echo "<table class='table table-hover mt-5'><thead><tr>";
 foreach($columnQuery as $row) {

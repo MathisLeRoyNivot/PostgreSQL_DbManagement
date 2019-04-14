@@ -8,9 +8,7 @@ function  getId(element) {
     var tableSelected = test.item(0).innerHTML;
     var schemaSelected = test.item(1).innerHTML;
     
-    alert("Button position :\nRow : " + rowID + 
-    "\nColmun : " + columnID +"\nTable selected : " + tableSelected + "\nSchema selected :" + schemaSelected);
-
+    // Reddirection vers une nouvelle page
     window.location.href = "./select-one-table.php?table=" + tableSelected + "&schema=" + schemaSelected; 
 
 }
