@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 # PostgreSQL - Web Application
 
 > Project realized by [Mathis Le Roy Nivot](https://github.com/MathisLeRoyNivot)
