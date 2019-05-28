@@ -1,9 +1,6 @@
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-# PostgreSQL - Web Application
+<h1 align="center">PostgreSQL - Web Application</h1>
 
-> Project realized by [Mathis Le Roy Nivot](https://github.com/MathisLeRoyNivot)
-
-This project aims to a web platform 
+This project aims to a web platform that allow database management
 
 ## Initialization 
 
@@ -34,3 +31,10 @@ For testing the project you will need a Web development platform. If still don't
 [XAMPP](https://www.apachefriends.org/fr/download.html)|
 
 And place the project into the 'www/' folder if your are in wamp for example.
+
+## Contributor :computer:
+
+- [Mathis Le Roy-Nivot](https://github.com/MathisLeRoyNivot "Go to @MathisLeRoyNivot's Github")
+
+## License :white_check_mark:
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MathisLeRoyNivot/PostgreSQL_DbManagement/blob/master/LICENSE) Mathis LE ROY-NIVOT 2019 ©
